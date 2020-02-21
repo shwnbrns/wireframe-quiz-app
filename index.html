@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Are you PCMR? Quiz</title>    
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <header role="banner">
+    <div class="row" >
+      <div class="col-12">
+        <h1>Are you PCMR? Quiz</h1>
+      </div>
+    </div>
+  </header>
+  
+  <main role="main">
+    
+    <div class="row box js-start-page ">
+      <section class="start-heading">
+        <div class="col-12">
+          <h2>Get Started</h2>
+          <p>If you like your temps low and your framerates high, then click start! </p>
+        </div>
+      </section>
+      <form>
+        <section class="navigation js-start-navigation">
+          <div class="col-6 navigation-row get-started">
+            <button id="start" type="submit" class="btn">Start</button>
+          </div>
+        </section>
+      </form>
+    </div>
+    
+    <div class="row box js-question-page hidden">
+      <section class="question-heading">
+        <div class="col-12">
+          <h2>Question <span class="js-current-number">1</span> of <span class="js-total-number">10</span></h2>
+          <p class="js-current-question"></p>
+        </div>
+      </section>
+      <form>
+        <section class="all-answers">
+          <div class="col-6 answer-options">
+            <label class="answers">
+              <input type="radio" class="option" role="radiogroup" name="option"><span class="option-text js-current-answers"></span>
+            </label>
+          </div>
+          <div class="col-6 answer-options">
+            <label class="answers">
+              <input type="radio" class="option" role="radiogroup" name="option"><span class="option-text js-current-answers"></span>
+            </label>
+          </div>
+          <div class="col-6 answer-options">
+            <label class="answers">
+              <input type="radio" class="option" role="radiogroup" name="option"><span class="option-text js-current-answers"></span>
+            </label>
+          </div>
+          <div class="col-6 answer-options">
+            <label class="answers">
+              <input type="radio" role="radiogroup" class="option" name="option"><span class="option-text js-current-answers"></span>
+            </label>
+          </div>
+        </section>
+        <section class="navigation">
+          <div class="col-6 navigation-row">
+            <p class="number-correct"><span class="js-number-correct"></span> out of <span class="js-current-number">1</span> Correct<span class="js-correct-wrong"></span><span class="js-correct-answer-is"></span></p>
+          </div>
+          <div class="col-6 navigation-row">
+            <button id="submit-answer" type="submit" class="btn">Next</button>
+          </div>
+        </section>
+      </form>
+    </div>
+    
+    <div class="row box js-final-page hidden">
+      <section class="final-heading">
+        <div class="col-12">
+          <h2>Quiz Complete!</h2>
+          <p>How did you do? You must be on your way to being Gabin's right hand! If not, go ahead and give the quiz another try. </p>
+        </div>
+      </section>
+      <form>
+        <section class="final-navigation">
+          <div class="col-6 navigation-row">
+            <p class="number-correct"><span class="js-number-correct"></span> out of <span class="js-current-number">1</span> Correct</p>
+          </div>
+          <div class="col-6 navigation-row">
+            <button id="restart-quiz" type="submit" class="btn">Try Again</button>
+          </div>
+        </section>
+      </form>
+    </div>
+    
+  </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
